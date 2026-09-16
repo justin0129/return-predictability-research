@@ -1,0 +1,141 @@
+prices: 5860 days x 20 tickers, 1995-01-03 .. 2018-04-11
+feature rows: 91,906   features (18): ['r1', 'mom_5', 'mom_20', 'mom_60', 'vol_20', 'vol_60', 'r1_z', 'vol_ratio', 'ma_gap_20', 'ma_gap_60', 'hi_gap_60', 'mkt_r1', 'mkt_mom_20', 'mkt_vol_20', 'dow_0', 'dow_1', 'dow_2', 'dow_3']
+test years: [2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017]
+  2006 zero   test_ic=+0.0000  {}
+  2006 rev1   test_ic=-0.0329  {}
+  2006 mom20  test_ic=+0.0165  {}
+  2006 ridge  test_ic=+0.0153  {"alpha": 1000.0, "val_ic": 0.039}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2006 lgbm   test_ic=-0.0055  {"num_leaves": 7, "best_iter": 17, "val_ic": 0.0513}
+  2006 lstm   test_ic=-0.0186  {"epochs_run": 4, "best_epoch": 2, "val_ic": -0.007, "n_train_seq": 31464}
+fold 2006 done in 21s  (train 1995-2004, val 2005, n_train=31,749, n_test=4,077)
+  2007 zero   test_ic=+0.0000  {}
+  2007 rev1   test_ic=+0.0033  {}
+  2007 mom20  test_ic=+0.0129  {}
+  2007 ridge  test_ic=+0.0396  {"alpha": 1000.0, "val_ic": 0.0147}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2007 lgbm   test_ic=+0.0201  {"num_leaves": 31, "best_iter": 12, "val_ic": 0.0118}
+  2007 lstm   test_ic=-0.0053  {"epochs_run": 3, "best_epoch": 1, "val_ic": -0.0243, "n_train_seq": 35244}
+fold 2007 done in 16s  (train 1995-2005, val 2006, n_train=35,529, n_test=4,267)
+  2008 zero   test_ic=+0.0000  {}
+  2008 rev1   test_ic=+0.0644  {}
+  2008 mom20  test_ic=-0.0165  {}
+  2008 ridge  test_ic=-0.0177  {"alpha": 10000.0, "val_ic": 0.0634}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2008 lgbm   test_ic=-0.0311  {"num_leaves": 31, "best_iter": 45, "val_ic": 0.0693}
+  2008 lstm   test_ic=+0.0201  {"epochs_run": 5, "best_epoch": 3, "val_ic": 0.0376, "n_train_seq": 39281}
+fold 2008 done in 18s  (train 1995-2006, val 2007, n_train=39,604, n_test=4,301)
+  2009 zero   test_ic=+0.0000  {}
+  2009 rev1   test_ic=+0.0111  {}
+  2009 mom20  test_ic=-0.0275  {}
+  2009 ridge  test_ic=+0.0107  {"alpha": 100000.0, "val_ic": 0.0127}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2009 lgbm   test_ic=+0.0423  {"num_leaves": 7, "best_iter": 5, "val_ic": -0.0141}
+  2009 lstm   test_ic=-0.0108  {"epochs_run": 4, "best_epoch": 2, "val_ic": 0.0261, "n_train_seq": 43548}
+fold 2009 done in 18s  (train 1995-2007, val 2008, n_train=43,871, n_test=4,284)
+  2010 zero   test_ic=+0.0000  {}
+  2010 rev1   test_ic=+0.0048  {}
+  2010 mom20  test_ic=+0.0132  {}
+  2010 ridge  test_ic=+0.0390  {"alpha": 1, "val_ic": 0.0148}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2010 lgbm   test_ic=+0.0214  {"num_leaves": 31, "best_iter": 13, "val_ic": 0.0227}
+  2010 lstm   test_ic=-0.0320  {"epochs_run": 3, "best_epoch": 1, "val_ic": 0.022, "n_train_seq": 47849}
+fold 2010 done in 17s  (train 1995-2008, val 2009, n_train=48,172, n_test=4,284)
+  2011 zero   test_ic=+0.0000  {}
+  2011 rev1   test_ic=+0.0240  {}
+  2011 mom20  test_ic=-0.0137  {}
+  2011 ridge  test_ic=+0.0437  {"alpha": 1, "val_ic": 0.0412}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2011 lgbm   test_ic=+0.0372  {"num_leaves": 31, "best_iter": 70, "val_ic": 0.11}
+  2011 lstm   test_ic=+0.0073  {"epochs_run": 7, "best_epoch": 5, "val_ic": 0.0227, "n_train_seq": 52133}
+fold 2011 done in 26s  (train 1995-2009, val 2010, n_train=52,456, n_test=4,506)
+  2012 zero   test_ic=+0.0000  {}
+  2012 rev1   test_ic=+0.0024  {}
+  2012 mom20  test_ic=+0.0197  {}
+  2012 ridge  test_ic=+0.0103  {"alpha": 100000.0, "val_ic": 0.0494}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2012 lgbm   test_ic=+0.0266  {"num_leaves": 7, "best_iter": 185, "val_ic": 0.0536}
+  2012 lstm   test_ic=+0.0127  {"epochs_run": 3, "best_epoch": 1, "val_ic": 0.0229, "n_train_seq": 56417}
+fold 2012 done in 19s  (train 1995-2010, val 2011, n_train=56,740, n_test=4,595)
+  2013 zero   test_ic=+0.0000  {}
+  2013 rev1   test_ic=+0.0245  {}
+  2013 mom20  test_ic=-0.0314  {}
+  2013 ridge  test_ic=+0.0185  {"alpha": 10000.0, "val_ic": 0.012}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2013 lgbm   test_ic=+0.0045  {"num_leaves": 7, "best_iter": 1, "val_ic": 0.0214}
+  2013 lstm   test_ic=-0.0253  {"epochs_run": 10, "best_epoch": 8, "val_ic": 0.0618, "n_train_seq": 60903}
+fold 2013 done in 37s  (train 1995-2011, val 2012, n_train=61,245, n_test=4,788)
+  2014 zero   test_ic=+0.0000  {}
+  2014 rev1   test_ic=-0.0052  {}
+  2014 mom20  test_ic=-0.0288  {}
+  2014 ridge  test_ic=+0.0174  {"alpha": 100000.0, "val_ic": 0.0265}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2014 lgbm   test_ic=-0.0065  {"num_leaves": 31, "best_iter": 10, "val_ic": 0.0355}
+  2014 lstm   test_ic=+0.0124  {"epochs_run": 5, "best_epoch": 3, "val_ic": 0.0231, "n_train_seq": 65478}
+fold 2014 done in 25s  (train 1995-2012, val 2013, n_train=65,839, n_test=4,800)
+  2015 zero   test_ic=+0.0000  {}
+  2015 rev1   test_ic=-0.0214  {}
+  2015 mom20  test_ic=+0.0002  {}
+  2015 ridge  test_ic=+0.0507  {"alpha": 100000.0, "val_ic": 0.0154}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/home/claude/proj/src/models.py:31: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return float(spearmanr(pred, y)[0])
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2015 lgbm   test_ic=+0.0362  {"num_leaves": 7, "best_iter": 1, "val_ic": NaN}
+  2015 lstm   test_ic=+0.0008  {"epochs_run": 3, "best_epoch": 1, "val_ic": 0.0149, "n_train_seq": 70266}
+fold 2015 done in 20s  (train 1995-2013, val 2014, n_train=70,627, n_test=5,040)
+  2016 zero   test_ic=+0.0000  {}
+  2016 rev1   test_ic=+0.0257  {}
+  2016 mom20  test_ic=+0.0036  {}
+  2016 ridge  test_ic=+0.0069  {"alpha": 10000.0, "val_ic": 0.055}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2016 lgbm   test_ic=-0.0203  {"num_leaves": 7, "best_iter": 198, "val_ic": 0.0337}
+  2016 lstm   test_ic=-0.0020  {"epochs_run": 4, "best_epoch": 2, "val_ic": 0.054, "n_train_seq": 75054}
+fold 2016 done in 24s  (train 1995-2014, val 2015, n_train=75,426, n_test=5,040)
+  2017 zero   test_ic=+0.0000  {}
+  2017 rev1   test_ic=-0.0294  {}
+  2017 mom20  test_ic=+0.0006  {}
+  2017 ridge  test_ic=+0.0257  {"alpha": 100000.0, "val_ic": 0.0147}
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+/usr/local/lib/python3.12/dist-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  2017 lgbm   test_ic=-0.0126  {"num_leaves": 31, "best_iter": 3, "val_ic": -0.0009}
+  2017 lstm   test_ic=-0.0050  {"epochs_run": 7, "best_epoch": 5, "val_ic": 0.004, "n_train_seq": 80086}
+fold 2017 done in 33s  (train 1995-2015, val 2016, n_train=80,466, n_test=5,020)
+/home/claude/proj/src/evaluate.py:53: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  ics.append(spearmanr(g["p"], g["y"])[0])
+
+all done in 4.9 min -> results/
